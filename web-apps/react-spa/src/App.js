@@ -2,6 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const apiUrl = window.config.apiUrl;
+  const enableNewFeature = window.config.featureFlags.enableNewFeature;
+  const enableExperimentalFeature = window.config.featureFlags.enableExperimentalFeature;
+
+  console.log(apiURL)
+  console.log(enableNewFeature)
+  console.log(enableExperimentalFeature)
   return (
     <div className="App">
       <header className="App-header">
